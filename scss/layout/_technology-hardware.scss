@@ -1,0 +1,60 @@
+@use "../variables/colors";
+@use "../mixins/button";
+
+.technology-hardware {
+    margin-top: 142px;
+}
+.container {
+}
+.technology-hardware__wrapper {
+    width: 1189px;
+    margin: 0 auto;
+}
+.technology-hardware__title {
+    text-transform: uppercase;
+    text-align: center;
+}
+.h2-thin {
+}
+.hardwares-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hardwares__img {
+}
+
+// media query 
+
+@media screen and (max-width: 390px)  {
+
+    .technology-hardware {
+        margin-top: 89px;
+    }
+
+    .technology-hardware__wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .technology-hardware__title {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.5px;
+        text-align: center;
+    }
+    .technology-hardware .h2-thin {
+        font-size: 24px;
+        font-weight: 300;
+    }
+    .hardwares-wrapper {
+        margin-top: 79px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+    }
+}

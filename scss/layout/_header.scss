@@ -1,0 +1,85 @@
+@use "../variables/colors";
+@use "../mixins/button";
+
+.nav {
+  margin-top: 27px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+  padding: 29px 0px 26px;
+}
+
+.nav-hamburger {
+  display: none;
+}
+.nav__links-wrapper {
+  display: flex;
+  gap: 41px;
+}
+
+.nav__btns {
+  display: flex;
+  gap: 38px;
+}
+
+.nav__btn {
+  padding: 17px 36px;
+  border-radius: 40px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+}
+
+#dark-btn {
+  background-color: #343045;
+  border: 2px solid $PRIMARY-COLOR;
+  padding: 17px 36px;
+  border-radius: 40px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.nav__btn .white-text {
+  color: $PRIMARY-COLOR;
+}
+
+#black-text {
+  color: $btn-color;
+}
+
+// Media so'rovlari
+
+@media screen and (max-width: 390px)  {
+  .container {
+    width: 350px;
+  }
+  
+  .nav {
+    margin-top: 23.24px;
+  }
+  
+  .nav-logo img {
+    width: 126px;
+    height: 87.5px;
+  }
+  .nav-links {
+    display: none;
+  }
+  
+  .nav-hamburger {
+    display: block;
+    line-height: 37px;
+  }
+  
+}

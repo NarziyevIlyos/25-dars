@@ -1,0 +1,149 @@
+@use "../variables/colors";
+@use "../mixins/button";
+
+.hero {
+  margin-top: 77px;
+}
+.hero-wrapper {
+}
+.hero__info {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__info-wrapper {
+  padding-top: 69px;
+  width: 456px;
+}
+.hero__info-title {
+  font-family: Montserrat;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 56.07px;
+  color: $PRIMARY-COLOR;
+}
+
+.hero__info-description {
+  width: 450px;
+  margin-top: 36px;
+  margin-bottom: 66px;
+}
+.hero__info-btn {
+  margin-right: 41px;
+}
+
+.hero__info-btn .text {
+  color: $btn-color;
+}
+.text {
+}
+.hero__info-btn-arrow {
+  position: relative;
+  top: 10px;
+}
+.hero__img {
+}
+.hero__btns {
+  width: 1212px;
+  margin-top: 153px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__btn {
+  width: 349px;
+  padding: 21px 36px 18px 36px;
+  display: flex;
+  align-items: center;
+  gap: 43px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.26px;
+
+  background: radial-gradient(
+    50% 2900.76% at 50% 53.89%,
+    rgba(58, 52, 86, 0.95) 0%,
+    #211e2e 100%
+  );
+  border-radius: 90px;
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+}
+.tekst {
+}
+
+//  media-query
+
+@media screen and (max-width: 390px)  {
+
+  .hero {
+    margin-top: 32px;
+  }
+  .hero-wrapper {
+    
+  }
+  .hero__info {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .hero__info-wrapper {
+    width: 100%;
+  }
+  .hero__info-title {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 300px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 43.88px;
+    color: $PRIMARY-COLOR;
+  }
+
+  .private-color {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.76px;
+  }
+  
+  .hero__info-description {
+    display: none;
+  }
+  .hero__info-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 53px;
+  }
+
+  .hero__info .btn {
+    padding: 17.5px 68.5px;
+    width: 292px;
+  }
+  
+  .hero__info-btn .text {
+    color: $btn-color;
+  }
+ 
+  .hero__info-btn-arrow {
+    display: none;
+  }
+  .hero__img img {
+    width: 318px;
+    height: 277px;
+  }
+  .hero__btns {
+    width: 0px;
+    margin-top: 153px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+
+}
+
+

@@ -1,0 +1,142 @@
+@use "../variables/colors";
+@use "../mixins/button";
+
+.footer {
+  padding-top: 136px;
+  padding-bottom: 48px;
+}
+.container {
+}
+.footer-wrapper {
+
+}
+.footer-items {
+  display: flex;
+  gap: 311px;
+
+  padding-bottom: 81px;
+  border-bottom: 1px solid;
+
+    border-image-source: linear-gradient(270deg, #343045 0%, #C0B7E8 34.9%, #8176AF 68.75%, #343045 100%);
+    border-image-slice: 1;
+}
+
+.footer__right-wrapper {
+  display: flex;
+  // justify-content: space-between;
+  gap: 330px;
+}
+.footer__logo {
+}
+.footer__links {
+}
+.footer__link .text {
+    display: inline-block;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: left;
+}
+.text {
+}
+.footer__social-media {
+}
+.footer__social-media-title {
+}
+.footer__social-media-wrapper {
+  margin-top: 39px;
+  display: flex;
+  gap: 20px;
+}
+.footer__social-media-btn {
+  display: inline-block;
+  margin-top: 49px;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  padding: 16px 40px;
+}
+.footer-copyright {
+    margin: 0 auto;
+    margin-top: 49px;
+}
+
+// media query 
+
+@media screen and (max-width: 390px)  {
+
+  .footer {
+    padding-top: 92px;
+    padding-bottom: 52px;
+    // height: 100vh;
+  }
+  .container {
+  }
+  .footer-wrapper {
+    display: grid;
+    place-items: center;
+  }
+  .footer-items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 56px;
+  
+    padding-bottom: 61px;
+    // border-bottom: 1px solid;
+  
+    //   border-image-source: linear-gradient(270deg, #343045 0%, #C0B7E8 34.9%, #8176AF 68.75%, #343045 100%);
+    //   border-image-slice: 1;
+  }
+  
+  .footer__right-wrapper {
+    display: flex;
+    // justify-content: space-between;
+    gap: 330px;
+  }
+  .footer__logo {
+  }
+  .footer__links {
+    display: none;
+  }
+  .footer__link .text {
+      display: inline-block;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 20px;
+      text-align: left;
+  }
+  .text {
+  }
+  .footer__social-media {
+  }
+  .footer__social-media-title {
+    text-align: center;
+  }
+  .footer__social-media-wrapper {
+    margin-top: 38px;
+    display: flex;
+    gap: 20px;
+  }
+  .footer__social-media-btn {
+    display: inline-block;
+    margin-top: 57px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+    padding: 19px 70px;
+  }
+  .footer-copyright {
+    margin-top: 38px;
+    width: 274px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.13em;
+    text-align: center;
+    
+  }
+  
+
+}
